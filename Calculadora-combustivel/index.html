@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<title>Calculadora Combustível</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Consumo</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+    <body>
+        <main id='tela-principal'>
+            <section class='conteudo' id='formulario'>
+                <h1>Calcule a média de consumo de combustivel de sua viagem</h1>
+            <form action="#" method='POST'>
+                <div class='form-group'>
+                <label for="Km">Quilometros percorridos</label>
+                <input type="number" name="Km" id="Km" min='0.0' max='2000.0' step="1" autofocus required onBlur='validarNumero(this)' />
+                </div>
+                
+                <div class='form-group'>
+                <label for="Litros">Litros abastecidos</label>
+                <input type="number" name="Litros" id="Litros" min='0.0' max='1000.0' step="0.1" required onBlur='validarNumero(this)' />
+                </div>
 
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<h1 class="titulo">Calculadora de consumo de combustível</h1>
-			</div>
-		</header>
-		<main>
-			<section class="container">
-				<h2>Relatório da viagem</h2>
-				<table>
-					<thead>
-						<tr>
-							<th>Tipo de Veículo</th>
-							<th>Km percorridos</th>
-							<th>Litros abastecidos</th>
-							<th>Média de consumo</th>
-						</tbody>
-				</table>			
-		</main>
-	</body>
+                <div class='form-group'>
+                <button class='botao' id='btnCalcular' type="submit">Calcular</button>
+                <button type='reset' id='btnLimpar'>Limpar</button>
+                </div>
+
+                <div class='form-group'>
+                <label for="media">Média</label>
+                <input type="number" name="media" id="media" value='' readonly />
+                </div>
+
+                <div class="form-group">
+                <input type="text" name="perfil" class="cx" id="perfil" placeholder='Pefil da sua condução' readonly />
+                </div>
+            </form>
+                <p id='aviso' class=''></p>
+            </section>
+        </main>
+        <script src='calcula.js'></script>
+    </body>
 </html>
