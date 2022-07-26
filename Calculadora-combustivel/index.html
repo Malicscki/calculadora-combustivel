@@ -7,8 +7,15 @@
     <title>Calculadora Consumo</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts-icones.css">
+
 </head>
     <body>
+
+    <div id="container-imagem"></div>
         <main id='tela-principal'>
             <section class='conteudo' id='formulario'>
                 <h1>Calcule a média de consumo de combustivel de sua viagem</h1>
@@ -29,7 +36,7 @@
                 </div>
 
                 <div class='form-group'>
-                <label for="media">Média</label>
+                <label for="media">Média de consumo (Km/L)</label>
                 <input type="number" name="media" id="media" value='' readonly />
                 </div>
 
@@ -39,7 +46,32 @@
             </form>
                 <p id='aviso' class=''></p>
             </section>
+
+            <nav class="btn_social">
+                    
+                <ul>
+                    <li><a href="https://www.facebook.com/luiz.malicscki/" target="_blank" title="facebook"><i class="icon icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/malicscki/" target="_blank" title="instagram"><i class="icon icon-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/malicscki/" target="_blank" title="youtube"><i class="icon icon-youtube"></i></a></li>
+                    <li><a href="https://wa.me/+5547984759767" target="_blank" title="youtube"><i class="icon icon-whatsapp"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/luizcarlosmalicscki/" target="_blank" title="linkdin"><i class="icon icon-linkedin"></i></a></li>
+                 </ul>
+             </nav>
+
+             <footer class="main_footer container">
+                <div class="main_footer_copy">
+            
+                    <p class="m-b-footer"> Luiz Carlos Malicscki - 2022.</p> 
+                    <p class="by"><i class="icon icon-heart-3"></i> Projeto Conquiste sua vaga - Mentor Pedro Marins</p>
+                
+                </div>
+            </footer>
+           
         </main>
+
+        
         <script src='calcula.js'></script>
     </body>
+
+    
 </html>
