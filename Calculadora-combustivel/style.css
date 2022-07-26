@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #cfcfcf;
+      
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 0rem 0rem; /* espacamento interno */
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+/* FORMULARIO */
+form {
+    margin: 1rem;
+	}
+
+/* DIV DOS INPUTS */
+.form-group {
+    margin: 0.625rem;
+}
+
+/* INPUTS */
+input[type=number], input[type=text] {
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffff;
+	font-size: large;
+	
+}
+
+.cx, input[type=text] {
+    border: 1px solid #ececec;
+    border-radius: 5px;
+	width: 400px;
+	height: 30px;
+	
+}
+
+/* BOTOES */
+.form-group button {
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 5px #000000;
+}
+
+#btnCalcular {
+    background: #000000;
+}
+
+#btnLimpar {
+    background: #F4D24D;
+}
+
+#container-imagem {
+    position:relative;
+    height: 50vh;
+    background-image: url(tanque-combustivel2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    opacity: 95%;
+       
+ }
+
+
+ /*AppSocial*/
+.btn_social { 
+
+	width:100%; 
+	float:left; 
+	display:flex; 
+	margin:auto; 
+}
+
+.btn_social ul  { 
+
+	width:auto; 
+	margin:auto; 
+	float:left; 
+	display:block; 
+}
+
+.btn_social ul li  { 
+
+	position:relative; 
+	background:#000000; /*aqui muda a cor do icone das midias sociais*/
+	list-style:none; 
+	float:left; 
+	margin:5px; 
+	z-index:1; 
+	overflow:hidden; 
+	border-radius:3px; 
+	font-size:1.5em; 
+	text-align:center; 
+}
+
+.btn_social ul li a  { 
+
+	width:50px; 
+	height:50px; 
+	line-height:53px; 
+	display:block; 
+	text-decoration:none; 
+	color:#fff; /* aqui muda a cor da fonte dentro do icone sociais*/
+	transition:.4s;
+
+}
+
+.btn_social ul li::before { 
+
+	transition:0.4s; 
+	position:absolute; 
+	content:''; 
+	width:100%; 
+	height:100%; 
+	top:90%; 
+	left:0; 
+	background:#e5ff00; /* aqui muda a cor do preenchimento de midias sociais*/
+	z-index:-1; 
+	transform: scale(1); 
+	transition:.4s; 
+   
+}
+
+.btn_social ul li:hover::before { transition:0.4s; top:0%; }
+.btn_social ul li a:hover       { color:#ffd000; }
+/*App Social*/
+
+/*FOOTER*/
+.main_footer          { background-color:transparent; font-size:0.875em; }
+.main_footer .content { padding:3em 0em; }
+
+.main_footer_copy       { background-color: transparent; width:100%; float:left; text-align:center; padding:1.5em 0em; }
+.main_footer_copy p     { font-family:'open_sanslight'; font-size:1em; color:#000000; height:20px; }
+.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+.main_footer_copy .by   { font-size:0.96em; }
+.main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#ffe600; }
+
