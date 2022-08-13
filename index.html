@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Consumo de Combustível</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts-icones.css">
+
+</head>
+    <body>
+    <div id="container-imagem"></div>
+    <h1 class="titulo">Calcule a média de consumo de combustivel de sua viagem.</h1>
+           <main id='tela-principal'>
+             <section class='conteudo' id='formulario'>                
+                <form action="#" method='POST'>
+                <div class='form-group'>
+                <label for="Km">Quilometros percorridos:</label>
+                <input type="number" name="Km" id="Km">
+                
+                </div>
+                
+                <div class='form-group'>
+                <label for="Litros">Litros abastecidos:</label>
+                <input type="number" name="Litros" id="Litros">
+                </div>
+
+                <div class='form-group'>
+                <button class='botao' id='btnCalcular' type="submit">Calcular</button>
+                <button type='reset' id='btnLimpar'>Limpar</button>
+                </div>
+
+                <div class='form-group'>
+                <label for="media"> ⛽ Média de consumo (Km/L):</label>
+                <input type="number" name="media" id="media" value='' readonly />
+                </div>
+
+                <div class="form-group">
+                <input type="text" name="perfil" class="cx" id="perfil" placeholder='Pefil da sua condução' readonly />
+                </div>
+                
+            </form>
+
+        </main>
+             </section>
+                <nav class="btn_social">
+                    <ul>
+                    <li><a href="https://www.facebook.com/luiz.malicscki/" target="_blank" title="facebook"><i class="icon icon-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/malicscki/" target="_blank" title="instagram"><i class="icon icon-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/malicscki/" target="_blank" title="youtube"><i class="icon icon-youtube"></i></a></li>
+                    <li><a href="https://wa.me/+5547984759767" target="_blank" title="youtube"><i class="icon icon-whatsapp"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/luizcarlosmalicscki/" target="_blank" title="linkdin"><i class="icon icon-linkedin"></i></a></li>
+                </ul>
+             </nav>
+
+             <footer class="main_footer container">
+                <div class="main_footer_copy">            
+                    <p class="m-b-footer"> Luiz Carlos Malicscki - 2022</p> 
+                    <p class="by"><i class="icon icon-heart-3"></i> Primeiro Projeto - Mentoria Pedro Marins e Henrique de Andrade</p>
+                </div>
+            </footer>
+        <script src='calcula.js'></script>
+    </body>
+
+    
+</html>
